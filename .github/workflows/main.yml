@@ -7,4 +7,7 @@ jobs:
     - uses: daliaMarzouk90/test_integration_with_lambda@main
       with:
         python-version: '3.9'
-    - run: python lambda_function.py
+    - run: pip install -r requirements.txt
+    - uses: daliaMarzouk90/test_integration_with_lambda@main
+      with:
+          args: zip -qq -r ./bundle.zip ./
