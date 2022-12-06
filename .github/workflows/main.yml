@@ -1,0 +1,9 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: test_integration_with_lambda/python-container-action@master
+      with:
+        myInput: world
