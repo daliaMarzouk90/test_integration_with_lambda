@@ -1,14 +1,14 @@
 import json
 import sys
 import os
+import requests
 
 my_input = os.environ["INPUT_MYINPUT"]
 
 def lambda_handler(event, context):
     # TODO implement
     print("****************Start*****************************")
-    my_input = os.environ["INPUT_MYINPUT"]
-    my_output = f"Hello {my_input}"
+
     print(my_output)
     print("****************End*****************************")
     return {
