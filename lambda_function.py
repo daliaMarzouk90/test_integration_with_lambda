@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     print("****************Start*****************************")
     my_input = os.environ["INPUT_MYINPUT"]
     my_output = f"Hello {my_input}"
-    print(f"::set-output name=myOutput::{my_output}")
+    print(my_output)
     print("****************End*****************************")
     return {
           "isBase64Encoded": False,
