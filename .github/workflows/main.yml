@@ -6,4 +6,5 @@ jobs:
     steps:
     - uses: daliaMarzouk90/test_integration_with_lambda@main
       with:
-        myInput: world
+        python-version: '3.9'
+    - run: python lambda_function.py
