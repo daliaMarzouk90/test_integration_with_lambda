@@ -4,6 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: test_integration_with_lambda/python-container-action@master
+    - uses: test_integration_with_lambda@master
       with:
         myInput: world
