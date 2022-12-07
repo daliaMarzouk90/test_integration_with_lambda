@@ -10,6 +10,6 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - name: zip
-      uses: daliaMarzouk90/test_integration_with_lambda@main
+      uses: montudor/action-zip@v0.1.0
       with:
           args: zip -qq -r ./bundle.zip ./
