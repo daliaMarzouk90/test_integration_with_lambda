@@ -9,3 +9,7 @@ jobs:
         python-version: '3.9'
         cache: 'pip'
     - run: pip install -r requirements.txt
+    - name: zip
+      uses: daliaMarzouk90/test_integration_with_lambda@main
+      with:
+          args: zip -qq -r ./bundle.zip ./
