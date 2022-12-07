@@ -1,10 +1,9 @@
-name: My Workflow
 on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: zip
-      uses: daliaMarzouk90/test_integration_with_lambda@main
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
-          args: zip -qq -r ./bundle.zip ./
+        python-version: '3.9'
