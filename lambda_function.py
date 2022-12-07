@@ -3,13 +3,11 @@ import sys
 import os
 import requests
 
-my_input = os.environ["INPUT_MYINPUT"]
-
 def lambda_handler(event, context):
     # TODO implement
     print("****************Start*****************************")
 
-    print(my_output)
+    print("hello dalia")
     print("****************End*****************************")
     return {
           "isBase64Encoded": False,
